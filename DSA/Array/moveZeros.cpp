@@ -18,12 +18,27 @@ vector<int> moveZeros(vector<int> arr)
     
     return arr;
 }
-
-int main()
+int EvenOdd(string n1 , string n2)
 {
-    vector<int> arr = {0, 1, 0, 3, 12};
-    vector<int> newArr = moveZeros(arr);
-    for(int i=0; i<arr.size(); i++){
-        cout<<newArr[i]<<" ";
+    //code here.
+    if((stoi(n1)*stoi(n2))%2==0){
+        return 1;
+    }else{
+        return -1;
     }
 }
+int main()
+{
+    // vector<int> arr = {0, 1, 0, 3, 12};
+    // vector<int> newArr = moveZeros(arr);
+    // for(int i=0; i<arr.size(); i++){
+    //     cout<<newArr[i]<<" ";
+    // }
+    string n1="874";
+    char a=n1[n1.length()-1];
+    int b=a-'0';
+    cout<<b;
+    // cout<<"\n"<<EvenOdd("123","71");
+}
+
+
